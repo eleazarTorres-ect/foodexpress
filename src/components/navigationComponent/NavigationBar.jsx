@@ -8,55 +8,42 @@ const NavigationBar = () => {
   const navDisplay =
     "fixed z-50 flex justify-center md:justify-end w-full bg-transparent";
 
-  /*$(window).scroll(function () {
+  $(window).scroll(function () {
     var home = $("#home").offset().top;
+    var products = $("#bestSeller").offset().top;
     var aboutUs = $("#aboutUs").offset().top;
-    var service = $("#services").offset().top;
-    var blog = $("#blog").offset().top - 100;
-    var contactUs = $("#contactUs").offset().top - 540;
+    var contactUs = $("#footer").offset().top - 540;
     if ($(window).scrollTop() >= home) {
       $("#homeNav").addClass("public_semibold border-b-2 ");
+      $("#productsNav").removeClass("public_semibold border-b-2");
       $("#aboutUsNav").removeClass("public_semibold border-b-2");
-      $("#servicesNav").removeClass("public_semibold border-b-2");
-      $("#projectsNav").removeClass("public_semibold border-b-2");
-      $("#blogNav").removeClass("public_semibold border-b-2");
       $("#contactUsNav").removeClass("public_semibold border-b-2");
+      $("#navBar").removeClass("bg-white shadow-md");
+      $("#navBar").addClass("bg-transparent");
+    }
+    if ($(window).scrollTop() >= products) {
+      $("#homeNav").removeClass("public_semibold border-b-2 ");
+      $("#productsNav").addClass("public_semibold border-b-2");
+      $("#aboutUsNav").removeClass("public_semibold border-b-2");
+      $("#contactUsNav").removeClass("public_semibold border-b-2");
+      $("#navBar").addClass("bg-white shadow-md");
+      $("#navBar").removeClass("bg-transparent");
     }
     if ($(window).scrollTop() >= aboutUs) {
       $("#homeNav").removeClass("public_semibold border-b-2 ");
+      $("#productsNav").removeClass("public_semibold border-b-2");
       $("#aboutUsNav").addClass("public_semibold border-b-2");
-      $("#servicesNav").removeClass("public_semibold border-b-2");
-      $("#projectsNav").removeClass("public_semibold border-b-2");
-      $("#blogNav").removeClass("public_semibold border-b-2");
-      $("#contactUsNav").removeClass("public_semibold border-b-2");
-    }
-    if ($(window).scrollTop() >= service) {
-      $("#homeNav").removeClass("public_semibold border-b-2 ");
-      $("#aboutUsNav").removeClass("public_semibold border-b-2");
-      $("#servicesNav").addClass("public_semibold border-b-2");
-      $("#projectsNav").removeClass("public_semibold border-b-2");
-      $("#blogNav").removeClass("public_semibold border-b-2");
-      $("#contactUsNav").removeClass("public_semibold border-b-2");
-    }
-    if ($(window).scrollTop() >= blog) {
-      $("#homeNav").removeClass("public_semibold border-b-2 ");
-      $("#aboutUsNav").removeClass("public_semibold border-b-2");
-      $("#servicesNav").removeClass("public_semibold border-b-2");
-      $("#projectsNav").removeClass("public_semibold border-b-2");
-      $("#blogNav").addClass("public_semibold border-b-2");
       $("#contactUsNav").removeClass("public_semibold border-b-2");
     }
     if ($(window).scrollTop() >= contactUs) {
       $("#homeNav").removeClass("public_semibold border-b-2 ");
+      $("#productsNav").removeClass("public_semibold border-b-2");
       $("#aboutUsNav").removeClass("public_semibold border-b-2");
-      $("#servicesNav").removeClass("public_semibold border-b-2");
-      $("#projectsNav").removeClass("public_semibold border-b-2");
-      $("#blogNav").removeClass("public_semibold border-b-2");
       $("#contactUsNav").addClass("public_semibold border-b-2");
     }
-  });*/
+  });
   return (
-    <nav className={navDisplay + navPadding}>
+    <nav className={navDisplay + navPadding} id="navBar">
       <div className="items-center flex-grow hidden md:flex">
         <LogoNavComponent />
       </div>
@@ -68,7 +55,7 @@ const NavigationBar = () => {
           label="Home"
         />
         <MenuComponent
-          linkReference="#products"
+          linkReference="#bestSeller"
           id="productsNav"
           status="inactive"
           label="Products"
@@ -80,7 +67,7 @@ const NavigationBar = () => {
           label="About"
         />
         <MenuComponent
-          linkReference="#contactUs"
+          linkReference="#footer"
           id="contactUsNav"
           status="inactive"
           label="Contact"
