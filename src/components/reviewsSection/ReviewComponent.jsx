@@ -1,6 +1,14 @@
 import Star from "../../assets/img/star.svg";
+import StarLight from "../../assets/img/starlight.svg";
 
 const ReviewComponent = ({ key, name, stars, message, image }) => {
+  var starColors = [];
+  for (var x = 0; x < stars; x++) {
+    starColors.push(Star);
+  }
+  for (var x = starColors.length - 1; x < 4; x++) {
+    starColors.push(StarLight);
+  }
   return (
     <div className="flex-wrap content-between w-4/5 max-w-sm py-2 m-5 overflow-hidden transition duration-150 ease-in-out transform rounded shadow-lg h-96 md:py-5 xl:py-10 hover:shadow-xl hover:scale-110">
       <div className="flex flex-wrap justify-center h-32">
@@ -11,11 +19,9 @@ const ReviewComponent = ({ key, name, stars, message, image }) => {
       <div className="px-4 pt-4 text-left public_semibold"> - {name}</div>
 
       <div className="flex content-center w-full px-4 pt-3">
-        <img className="w-4 h-4" src={Star} alt="Star" />
-        <img className="w-4 h-4" src={Star} alt="Star" />
-        <img className="w-4 h-4" src={Star} alt="Star" />
-        <img className="w-4 h-4" src={Star} alt="Star" />
-        <img className="w-4 h-4" src={Star} alt="Star" />
+        {starColors.map((listitem) => (
+          <img className="w-4 h-4" src={listitem} alt={listitem}></img>
+        ))}
         <div className="px-4 text-sm text-left public_thin">{stars} / 5</div>
       </div>
     </div>

@@ -36,21 +36,21 @@ const NewItemsContainer = () => {
         <ProductComponent
           key="2"
           title="Cake"
-          stars="5"
+          stars="4"
           price="Php 35.00"
           image={New2}
         />
         <ProductComponent
           key="3"
           title="Ramen"
-          stars="5"
+          stars="4"
           price="Php 35.00"
           image={New3}
         />
         <ProductComponent
           key="4"
           title="Ramen"
-          stars="5"
+          stars="3"
           price="Php 35.00"
           image={New4}
         />
@@ -64,7 +64,7 @@ const NewItemsContainer = () => {
         <ProductComponent
           key="6"
           title="Ramen"
-          stars="5"
+          stars="4"
           price="Php 35.00"
           image={New6}
         />

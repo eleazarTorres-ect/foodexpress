@@ -35,7 +35,7 @@ const BestSellerContainer = () => {
         <ProductComponent
           key="2"
           title="Cake"
-          stars="5"
+          stars="4"
           price="Php 35.00"
           image={Best2}
         />
@@ -49,7 +49,7 @@ const BestSellerContainer = () => {
         <ProductComponent
           key="4"
           title="Ramen"
-          stars="5"
+          stars="4"
           price="Php 35.00"
           image={Best4}
         />
@@ -63,14 +63,14 @@ const BestSellerContainer = () => {
         <ProductComponent
           key="6"
           title="Ramen"
-          stars="5"
+          stars="3"
           price="Php 35.00"
           image={Best6}
         />
         <ProductComponent
           key="7"
           title="Ramen"
-          stars="5"
+          stars="4"
           price="Php 35.00"
           image={Best7}
         />
