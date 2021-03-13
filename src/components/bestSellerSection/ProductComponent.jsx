@@ -22,7 +22,7 @@ const ProductComponent = ({ key, title, stars, price, image }) => {
       <div className="flex flex-wrap content-center justify-between px-2">
         <div className="text-left public_thin">{price}</div>
         <div className="flex flex-wrap content-center">
-          <img className="w-4 h-4" src={Cart} alt="Star" />
+          <img className="w-4 h-4" src={Cart} alt="Cart" />
         </div>
       </div>
     </div>
