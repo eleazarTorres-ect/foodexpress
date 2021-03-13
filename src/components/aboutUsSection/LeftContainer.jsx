@@ -8,7 +8,6 @@ const LeftContainer = () => {
           src={Logo1}
           alt="About Us"
           data-aos="fade-right"
-          data-aos-offset="200"
         />
       </div>
     </div>

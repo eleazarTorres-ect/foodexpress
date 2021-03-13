@@ -7,11 +7,9 @@ const ProductComponent = ({ key, title, stars, price, image }) => {
     <div className="flex-wrap content-between w-64 max-w-sm py-2 m-5 overflow-hidden transition duration-150 ease-in-out transform rounded shadow-lg h-80 md:w-56 lg:w-64 2xl:w-96 md:py-5 xl:py-10 hover:shadow-xl hover:scale-110">
       <div className="flex flex-wrap justify-center h-48">
         <img
-          data-aos="fade-left"
-          data-aos-duration="2000"
           className="h-48 transition duration-150 ease-in-out transform lg:h-full shake-slow animate-bounce_idle hover:scale-110"
           src={image}
-          alt="Banner"
+          alt={title}
         />
       </div>
       <div className="flex w-full px-2">
