@@ -3,7 +3,7 @@ import FooterComponent from "./FooterComponent";
 const FooterContainer = () => {
   return (
     <div
-      className="justify-between w-full h-auto px-2 py-5 bg-food-B-400 sm:px-24 md:px-24 lg:px-48"
+      className="justify-between w-full h-auto px-2 py-5 mt-20 bg-food-B-400 sm:px-24 md:px-24 lg:px-48"
       id="footer"
     >
       <div className="flex flex-wrap max-w-6xl m-auto text-red-500 justify-left">

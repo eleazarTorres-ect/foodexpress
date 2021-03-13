@@ -4,7 +4,7 @@ import Instagram from "../../assets/img/instagram.svg";
 import Twitter from "../../assets/img/twitter.svg";
 const SocialMediaContainer = () => {
   return (
-    <div className="flex justify-start w-full">
+    <div className="flex justify-center w-full md:justify-start">
       <SocialMediaComponent
         id="1"
         title="Facebook"
