@@ -3,6 +3,7 @@ import React from "react";
 import MenuComponent from "./MenuComponent";
 import LogoNavComponent from "./LogoNavComponent";
 import Cart from "../../assets/img/carts.svg";
+import CartComponent from "./CartComponent";
 
 const NavigationBar = () => {
   const navPadding =
@@ -74,15 +75,7 @@ const NavigationBar = () => {
           status="inactive"
           label="Contact"
         />
-        <div className="flex flex-wrap content-center">
-          <span class="relative inline-block">
-            <img className="w-6 h-6" src={Cart} alt="Cart" />
-
-            <span class="absolute top-0 right-0 inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-red-100 transform translate-x-1/2 -translate-y-1/2 bg-red-600 rounded-full">
-              0
-            </span>
-          </span>
-        </div>
+        <CartComponent />
       </div>
     </nav>
   );
