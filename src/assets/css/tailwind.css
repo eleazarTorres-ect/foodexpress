@@ -444,10 +444,10 @@ html {
       opacity: 0;
     }
   }
-  .rec.rec-arrow-left:hover {
+  .rec-arrow-left:hover {
     background-color: #B2D326;
 }
-.rec.rec-arrow-right:hover {
+.rec-arrow-right:hover {
   background-color: #B2D326;
 }
 button.rec-dot {

@@ -30115,6 +30115,14 @@ html{
   }
 }
 
+.rec-arrow-left:hover {
+  background-color: #B2D326;
+}
+
+.rec-arrow-right:hover {
+  background-color: #B2D326;
+}
+
 button.rec-dot {
   background-color: #b2d326;
   box-shadow: #b2d326;
@@ -30122,8 +30130,8 @@ button.rec-dot {
 }
 
 button.rec-dot:hover,
-  button.rec-dot:active,
-  button.rec-dot:focus {
+button.rec-dot:active,
+button.rec-dot:focus {
   box-shadow: #b2d326;
 }
 
@@ -174656,4 +174664,3 @@ button.rec-dot:hover,
     animation: bounce 1s infinite;
   }
 }
-  
