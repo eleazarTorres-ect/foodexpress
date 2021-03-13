@@ -15,7 +15,9 @@ const SocialMediaComponent = ({ id, title, linkReference }) => {
   }
   return (
     <div className="mx-2">
-      <img className="w-8 h-8" src={Logo} alt={title} />
+      <a href={linkReference} target="_blank">
+        <img className="w-8 h-8 shake" src={Logo} alt={title} />
+      </a>
     </div>
   );
 };
