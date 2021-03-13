@@ -7,6 +7,7 @@ import FooterContainer from "../components/footerSection/FooterContainer";
 import NavigationBar from "../components/navigationComponent/NavigationBar";
 import NewItemsContainer from "../components/newItemsSection/NewItemsContainer";
 import ReviewContainer from "../components/reviewsSection/ReviewContainer";
+import ScrollTopButton from "../components/scrollTopComponent/ScrollTopButton";
 
 const HomeContainer = () => {
   //TODO Testimony Section
@@ -35,6 +36,7 @@ const HomeContainer = () => {
       <section className="flex content-center justify-between w-full">
         <FooterContainer />
       </section>
+      <ScrollTopButton />
     </React.Fragment>
   );
 };
