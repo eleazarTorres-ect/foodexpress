@@ -18,7 +18,7 @@ const BestSellerContainer = () => {
   ];
   return (
     <div
-      className="justify-center block w-full h-auto px-2 py-20 xl:h-screen lg:screenFromNav sm:flex-row sm:py-20 sm:px-24 md:px-24 lg:px-48"
+      className="justify-center block w-full h-auto px-2 py-20 mt-20 xl:h-screen lg:screenFromNav sm:flex-row sm:py-20 sm:px-24 md:px-24 lg:px-48"
       id="bestSeller"
     >
       <div className="flex flex-wrap justify-center w-full h-12 py-2 text-2xl text-center md:justify-start md:text-left text-food-A-400 poppins_bold">
