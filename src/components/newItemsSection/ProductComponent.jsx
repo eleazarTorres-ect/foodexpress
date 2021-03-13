@@ -4,10 +4,11 @@ import Cart from "../../assets/img/carts.svg";
 import $ from "jquery";
 const ProductComponent = ({ key, title, stars, price, image }) => {
   var starColors = [];
-  for (var x = 0; x < stars; x++) {
+  var x, y;
+  for (x = 0; x < stars; x++) {
     starColors.push(Star);
   }
-  for (var x = starColors.length - 1; x < 4; x++) {
+  for (y = starColors.length - 1; y < 4; y++) {
     starColors.push(StarLight);
   }
   $(document).on("click", ".cartProducts", function (event) {

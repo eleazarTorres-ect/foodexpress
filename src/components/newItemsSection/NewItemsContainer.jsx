@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import Carousel from "react-elastic-carousel";
 import ProductComponent from "./ProductComponent";
 import New1 from "../../assets/img/Food-03.svg";

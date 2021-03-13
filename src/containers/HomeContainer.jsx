@@ -8,7 +8,6 @@ import NavigationBar from "../components/navigationComponent/NavigationBar";
 import NewItemsContainer from "../components/newItemsSection/NewItemsContainer";
 import ReviewContainer from "../components/reviewsSection/ReviewContainer";
 import ScrollTopButton from "../components/scrollTopComponent/ScrollTopButton";
-import $ from "jquery";
 const HomeContainer = () => {
   //TODO Testimony Section
 

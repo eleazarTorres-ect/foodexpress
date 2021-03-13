@@ -3,10 +3,11 @@ import StarLight from "../../assets/img/starlight.svg";
 
 const ReviewComponent = ({ key, name, stars, message, image }) => {
   var starColors = [];
-  for (var x = 0; x < stars; x++) {
+  var x, y;
+  for (x = 0; x < stars; x++) {
     starColors.push(Star);
   }
-  for (var x = starColors.length - 1; x < 4; x++) {
+  for (y = starColors.length - 1; y < 4; y++) {
     starColors.push(StarLight);
   }
   return (

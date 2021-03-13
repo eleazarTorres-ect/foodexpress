@@ -8,7 +8,7 @@ class CartComponent extends Component {
   render() {
     return (
       <div className="flex flex-wrap content-center">
-        <span class="relative inline-block shake-slow">
+        <span className="relative inline-block shake-slow">
           <img className="w-6 h-6" src={Cart} alt="Cart" />
 
           <span

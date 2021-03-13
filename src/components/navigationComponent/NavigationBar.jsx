@@ -2,7 +2,6 @@ import $ from "jquery";
 import React from "react";
 import MenuComponent from "./MenuComponent";
 import LogoNavComponent from "./LogoNavComponent";
-import Cart from "../../assets/img/carts.svg";
 import CartComponent from "./CartComponent";
 
 const NavigationBar = () => {
