@@ -1,4 +1,4 @@
-const FooterComponent = ({ columnTitle, data }) => {
+const FooterComponent = ({ key, columnTitle, data }) => {
   return (
     <div className="w-1/2 p-5 sm:w-4/12 md:w-3/12">
       <div className="mb-6 text-xs font-medium text-gray-900 uppercase">

@@ -8,18 +8,22 @@ const FooterContainer = () => {
     >
       <div className="flex flex-wrap max-w-6xl m-auto text-red-500 justify-left">
         <FooterComponent
+          key="1"
           columnTitle="Community"
           data={["Facebook", "Twitter", "Instagram", "Youtube"]}
         />
         <FooterComponent
+          key="2"
           columnTitle="About Us"
           data={["History", "Blog", "Location"]}
         />
         <FooterComponent
+          key="3"
           columnTitle="Bestseller"
           data={["Ramen", "Sushi", "Chicken Teriyaki", "Tempura"]}
         />
         <FooterComponent
+          key="4"
           columnTitle="New Products"
           data={["Sushi Hokkaido", "Strawberry Pancake"]}
         />
