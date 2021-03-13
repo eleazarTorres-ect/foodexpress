@@ -30115,6 +30115,18 @@ html{
   }
 }
 
+button.rec-dot {
+  background-color: #b2d326;
+  box-shadow: #b2d326;
+  opacity: 0.8;
+}
+
+button.rec-dot:hover,
+  button.rec-dot:active,
+  button.rec-dot:focus {
+  box-shadow: #b2d326;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -174644,3 +174656,4 @@ html{
     animation: bounce 1s infinite;
   }
 }
+  
