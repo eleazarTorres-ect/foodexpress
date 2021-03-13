@@ -11,7 +11,7 @@ const NavigationBar = () => {
   $(window).scroll(function () {
     var home = $("#home").offset().top;
     var products = $("#bestSeller").offset().top;
-    var aboutUs = $("#aboutUs").offset().top;
+    var aboutUs = $("#aboutUs").offset().top - 200;
     var contactUs = $("#footer").offset().top - 540;
     if ($(window).scrollTop() >= home) {
       $("#homeNav").addClass("public_semibold border-b-2 ");
