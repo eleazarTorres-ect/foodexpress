@@ -444,3 +444,20 @@ html {
       opacity: 0;
     }
   }
+  .rec-arrow-left:hover {
+    background-color: #B2D326;
+}
+.rec-arrow-right:hover {
+  background-color: #B2D326;
+}
+button.rec-dot {
+  background-color: #b2d326;
+  box-shadow: #b2d326;
+  opacity: 0.8;
+}
+
+button.rec-dot:hover,
+button.rec-dot:active,
+button.rec-dot:focus {
+  box-shadow: #b2d326;
+}
